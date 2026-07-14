@@ -288,7 +288,7 @@ if uploaded_file is not None:
         subsets_results = []
         
         # Only run if number of features is reasonable to avoid severe web latency (limit to max 8 variables)
-        eval_features = possible_predictors[:12]
+        eval_features = possible_predictors[:8]
         
         for k in range(1, len(eval_features) + 1):
             for combo in itertools.combinations(eval_features, k):
